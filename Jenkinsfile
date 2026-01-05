@@ -11,9 +11,9 @@ pipeline {
 
     stages {
 
-        stage('Fetch code') {
-            checkout scm
-        }
+        // stage('Fetch code') {
+        //     checkout scm
+        // }
 
         stage('Archiving backend') {
             steps{
