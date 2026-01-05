@@ -12,9 +12,7 @@ pipeline {
     stages {
 
         stage('Fetch code') {
-            steps {
-                git branch: 'main', url: 'https://github.com/cyanexttime/backend-angular-app.git'
-            }
+            checkout scm
         }
 
         stage('Archiving backend') {
